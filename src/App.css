@@ -1,0 +1,22 @@
+html,
+body,
+h1,
+h2,
+div,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+image {
+  max-width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+
+.App {
+}

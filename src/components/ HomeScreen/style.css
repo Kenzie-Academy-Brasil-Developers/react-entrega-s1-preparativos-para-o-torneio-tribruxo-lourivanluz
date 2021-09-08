@@ -1,0 +1,8 @@
+.homeScreen {
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(./../../img/GobletofFire.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

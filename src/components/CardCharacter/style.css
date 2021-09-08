@@ -1,0 +1,45 @@
+.sortHouse {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.sortHouse h1 {
+  font-size: 28px;
+}
+
+.gryffindor {
+  background-color: red;
+}
+.slytherin {
+  background-color: green;
+}
+.hufflepuff {
+  background-color: yellow;
+}
+.ravenclaw {
+  background-color: blue;
+}
+
+.border {
+  background-size: 250px;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 300px;
+}
+
+.border--gryffindor {
+  background-image: url(./../../img/grif.png);
+}
+.border--slytherin {
+  background-image: url(./../../img/cobra.png);
+}
+.border--hufflepuff {
+  background-image: url(./../../img/doninha.png);
+}
+.border--ravenclaw {
+  background-image: url(./../../img/passaro.png);
+}
