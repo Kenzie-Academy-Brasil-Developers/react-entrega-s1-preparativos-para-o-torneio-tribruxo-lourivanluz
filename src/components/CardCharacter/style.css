@@ -1,14 +1,35 @@
-.sortHouse {
-  height: 30vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 25px;
+img {
+  width: 90%;
+  max-width: 350px;
 }
 
-.sortHouse h1 {
-  font-size: 28px;
+.logo {
+  z-index: 3;
+}
+.cardInfo {
+  width: 250px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardInfo img {
+  width: 200px;
+  border-radius: 15px;
+}
+
+.cardInfo h1 {
+  font-size: 25px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  height: 400px;
 }
 
 .gryffindor {
@@ -22,24 +43,4 @@
 }
 .ravenclaw {
   background-color: blue;
-}
-
-.border {
-  background-size: 250px;
-  background-repeat: no-repeat;
-  width: 250px;
-  height: 300px;
-}
-
-.border--gryffindor {
-  background-image: url(./../../img/grif.png);
-}
-.border--slytherin {
-  background-image: url(./../../img/cobra.png);
-}
-.border--hufflepuff {
-  background-image: url(./../../img/doninha.png);
-}
-.border--ravenclaw {
-  background-image: url(./../../img/passaro.png);
 }
