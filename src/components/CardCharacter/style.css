@@ -7,7 +7,7 @@ img {
   z-index: 3;
 }
 .cardInfo {
-  width: 250px;
+  /*  width: 250px; */
   position: absolute;
   display: flex;
   justify-content: center;

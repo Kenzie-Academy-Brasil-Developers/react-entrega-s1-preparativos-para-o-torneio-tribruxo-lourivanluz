@@ -27,7 +27,8 @@
     width: 100%;
   }
 
-  .cardInfo,
+  .cardInfo {
+  }
   .cardInfo img {
     width: 400px;
   }

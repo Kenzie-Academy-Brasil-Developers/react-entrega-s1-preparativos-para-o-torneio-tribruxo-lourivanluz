@@ -14,7 +14,6 @@ function App() {
     fetch("http://hp-api.herokuapp.com/api/characters/students")
       .then((response) => response.json())
       .then((response) => {
-        //setData(response);
         setHouseSort({
           Gryffindor: filterHouse(response, "Gryffindor"),
           Hufflepuff: filterHouse(response, "Hufflepuff"),
@@ -46,7 +45,6 @@ function App() {
   };
 
   const drawPlayer = (data, callback) => {
-    console.log("ai");
     const houseSelected = callback();
     const playersSelected = [];
     houseSelected.forEach((item) => {
@@ -54,19 +52,28 @@ function App() {
       const random = randomNumber(players.length - 1);
       playersSelected.push(players[random]);
     });
-    console.log(playersSelected);
     setPlayers(playersSelected);
   };
-
-  //drawHouse(houseSort, drawHouse);
-  //no chanps preciso passar [{...},{...},{...}]
+  const [showLogo, setShowLogo] = useState(true);
   return (
     <div className="App">
-      {showHomePage && <HomeScreen setShowHomePage={setShowHomePage} />}
+      {showHomePage && (
+        <HomeScreen
+          setShowHomePage={setShowHomePage}
+          drawPlayer={drawPlayer}
+          houseSort={houseSort}
+          drawHouse={drawHouse}
+        />
+      )}
       {!showHomePage && (
         <>
-          <SortScreen chanps={players} />
-          <button onClick={() => drawPlayer(houseSort, drawHouse)}>
+          <SortScreen chanps={players} showLogo={showLogo} />
+          <button
+            onClick={() => {
+              setShowLogo(!showLogo);
+              drawPlayer(houseSort, drawHouse);
+            }}
+          >
             Clicando
           </button>
         </>

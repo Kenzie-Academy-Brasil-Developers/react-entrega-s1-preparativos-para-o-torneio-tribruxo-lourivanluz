@@ -1,22 +1,32 @@
 import { useState } from "react";
+import { useEffect } from "react/cjs/react.development";
 import { imagens } from "../../img/Img";
 import "./style.css";
 
-export function CardCharacter({ person: { name, house, image, wand } }) {
-  const [isVisible, setIsVisible] = useState(false);
+export function CardCharacter({
+  person: { name, house, image, wand },
+  showLogo,
+}) {
+  const [logoVisible, setlogoVisible] = useState(true);
+
+  useEffect(() => {
+    setlogoVisible(true);
+  }, [showLogo]);
 
   return (
     <div className={`card ${house.toLowerCase()}`}>
-      {!isVisible && (
+      {logoVisible && (
         <img
           className="logo"
           src={imagens[house.toLowerCase()]}
           alt="logo house"
-          onClick={() => setIsVisible(true)}
+          onClick={() => {
+            setlogoVisible(false);
+          }}
         />
       )}
 
-      {isVisible && (
+      {!logoVisible && (
         <div className="cardInfo">
           <img src={image} alt="info person" />
           <h1>{name}</h1>
