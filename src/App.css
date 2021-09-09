@@ -17,3 +17,12 @@ image {
 a {
   text-decoration: none;
 }
+.bnt-sortScreen {
+  display: block;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 200px;
+  height: 30px;
+}

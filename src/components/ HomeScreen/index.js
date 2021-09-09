@@ -8,14 +8,16 @@ export function HomeScreen({
 }) {
   return (
     <div className="homeScreen">
-      <h1> algo</h1>
+      <h1> O torneio Tribruxo vai começar!!</h1>
+      <h2> Prepare-se</h2>
       <button
+        className="btn-grad"
         onClick={() => {
           drawPlayer(houseSort, drawHouse);
           setShowHomePage(false);
         }}
       >
-        Click para sumir
+        Iniciar torneio
       </button>
     </div>
   );

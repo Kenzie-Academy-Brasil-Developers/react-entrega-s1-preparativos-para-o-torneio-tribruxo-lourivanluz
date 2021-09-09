@@ -22,13 +22,12 @@
   .card {
     width: 30vw;
     height: 100vh;
+    margin: 0;
   }
   .logo {
     width: 100%;
   }
 
-  .cardInfo {
-  }
   .cardInfo img {
     width: 400px;
   }
