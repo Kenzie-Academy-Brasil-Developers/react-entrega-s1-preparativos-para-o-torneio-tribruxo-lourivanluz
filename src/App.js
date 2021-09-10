@@ -67,7 +67,8 @@ function App() {
       )}
       {!showHomePage && (
         <>
-          <SortScreen chanps={players} showLogo={showLogo} />
+          {showLogo && <SortScreen chanps={players} showLogo={showLogo} />}
+          {!showLogo && <SortScreen chanps={players} showLogo={showLogo} />}
           <button
             className="bnt-sortScreen"
             onClick={() => {

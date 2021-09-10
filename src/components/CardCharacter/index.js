@@ -9,10 +9,11 @@ export function CardCharacter({
 }) {
   const [logoVisible, setlogoVisible] = useState(true);
 
-  useEffect(() => {
+  /* useEffect(() => {
+    console.Console(showLogo);
     setlogoVisible(true);
   }, [showLogo]);
-
+ */
   return (
     <div className={`card ${house.toLowerCase()}`}>
       {logoVisible && (
