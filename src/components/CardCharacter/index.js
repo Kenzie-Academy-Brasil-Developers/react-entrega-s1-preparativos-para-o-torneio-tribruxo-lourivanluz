@@ -4,7 +4,7 @@ import { imagens } from "../../img/Img";
 import "./style.css";
 
 export function CardCharacter({
-  person: { name, house, image, wand },
+  person: { name, house, image, alive },
   showLogo,
 }) {
   const [logoVisible, setlogoVisible] = useState(true);
@@ -14,6 +14,9 @@ export function CardCharacter({
     setlogoVisible(true);
   }, [showLogo]);
  */
+  console.log(alive);
+  const firstLetter = house[0];
+
   return (
     <div className={`card ${house.toLowerCase()}`}>
       {logoVisible && (
@@ -31,8 +34,11 @@ export function CardCharacter({
         <div className="cardInfo">
           <img src={image} alt="info person" />
           <h1>{name}</h1>
-          <h2>{house}</h2>
-          <h2>{"varinha"}</h2>
+          <h2>{alive ? "Está vivo" : "Não está vivo"}</h2>
+          <h2 className="houseName">
+            <span className="houseName--firstLatter">{firstLetter}</span>
+            <span className="houseName--endLatters">{house.slice(1)}</span>
+          </h2>
         </div>
       )}
     </div>

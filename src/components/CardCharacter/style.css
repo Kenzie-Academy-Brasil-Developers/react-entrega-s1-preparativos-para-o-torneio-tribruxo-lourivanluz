@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "harryFont";
+  src: url("./../../font/harry_p/HARRYP__.TTF") format(truetype);
+}
+
 img {
   width: 90%;
   max-width: 350px;
@@ -22,8 +27,11 @@ img {
   object-fit: cover;
 }
 
-.cardInfo h1 {
-  font-size: 25px;
+.cardInfo h1,
+.cardInfo h2 {
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 
 .card {
@@ -33,18 +41,83 @@ img {
   margin-bottom: 25px;
   height: 400px;
 }
+.houseName {
+  display: flex;
+  font-size: 27px;
+  letter-spacing: 7px;
+  color: black;
+  font-family: "harryFont";
+  background-color: white;
+  border-radius: 10px;
+}
+.houseName--firstLatter {
+  padding-left: 5px;
+  display: block;
+}
+.houseName--endLatters {
+  color: black;
+  text-shadow: none;
+}
 
 .gryffindor {
-  background-color: red;
   background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d7b2e79c-09db-4ffa-b7bd-3540414ad0dd/d5z2f66-d8d9c79c-12d0-47e9-9d93-c36efb2bcbff.jpg/v1/fill/w_900,h_563,q_75,strp/harry_potter_wallpaper__gryffindor_stripes_by_theladyavatar_d5z2f66-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYzIiwicGF0aCI6IlwvZlwvZDdiMmU3OWMtMDlkYi00ZmZhLWI3YmQtMzU0MDQxNGFkMGRkXC9kNXoyZjY2LWQ4ZDljNzljLTEyZDAtNDdlOS05ZDkzLWMzNmVmYjJiY2JmZi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.i-630GtLeaEKfAMKHVrjq5FK8sOyzL1COwqoNjhnyzg);
   background-size: cover;
+  border: 15px solid #851d00;
 }
+.gryffindor .houseName {
+  border: 5px solid #bc211f;
+}
+.gryffindor .houseName--firstLatter {
+  background-color: #bc211f;
+  color: white;
+}
+
 .slytherin {
-  background-color: green;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d7b2e79c-09db-4ffa-b7bd-3540414ad0dd/d5z2fai-314037ba-8a06-4fff-be0e-af4d8085b12b.jpg/v1/fill/w_900,h_563,q_75,strp/harry_potter_wallpaper__slytherin_stripes_by_theladyavatar_d5z2fai-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTYzIiwicGF0aCI6IlwvZlwvZDdiMmU3OWMtMDlkYi00ZmZhLWI3YmQtMzU0MDQxNGFkMGRkXC9kNXoyZmFpLTMxNDAzN2JhLThhMDYtNGZmZi1iZTBlLWFmNGQ4MDg1YjEyYi5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lfW12H8oEyRmVBd2MqoZXPkE5evE9RiaxE-KPTx9yBM);
+  background-size: cover;
+  border: 15px solid #10460e;
+}
+.slytherin .houseName {
+  border: 5px solid #10460e;
+}
+.slytherin .houseName--firstLatter {
+  background-color: #10460e;
+  color: white;
 }
 .hufflepuff {
-  background-color: yellow;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d7b2e79c-09db-4ffa-b7bd-3540414ad0dd/d5z2fb6-47497122-96c3-43b3-987e-dd55badba356.jpg/v1/fill/w_900,h_563,q_75,strp/harry_potter_wallpaper__hufflepuff_stripes_by_theladyavatar-d5z2fb6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9kN2IyZTc5Yy0wOWRiLTRmZmEtYjdiZC0zNTQwNDE0YWQwZGQvZDV6MmZiNi00NzQ5NzEyMi05NmMzLTQzYjMtOTg3ZS1kZDU1YmFkYmEzNTYuanBnIiwid2lkdGgiOiI8PTkwMCIsImhlaWdodCI6Ijw9NTYzIn1dXX0.rocw3TEFc0eZ3B9F5O-zB9q_9nmYCqU4FEewoxJRZZk);
+  background-size: cover;
+  border: 15px solid #c68506;
+}
+.hufflepuff .houseName {
+  border: 5px solid #c68506;
+}
+.hufflepuff .houseName--firstLatter {
+  background-color: #c68506;
+  color: white;
 }
 .ravenclaw {
-  background-color: blue;
+  background-image: url(https://i.pinimg.com/originals/0c/6f/32/0c6f32fc76eda8690fcff50b2e4f9a7c.jpg);
+  background-size: cover;
+  border: 15px solid #015170;
+}
+.ravenclaw .houseName {
+  border: 5px solid #015170;
+}
+.ravenclaw .houseName--firstLatter {
+  background-color: #015170;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .ravenclaw,
+  .gryffindor,
+  .hufflepuff,
+  .slytherin {
+    border-bottom: none;
+    border-top: none;
+  }
+  .cardInfo h1 {
+    font-size: 35px;
+  }
 }
