@@ -6,7 +6,7 @@ import { SortScreen } from "./components/SortScreen";
 function App() {
   const [showHomePage, setShowHomePage] = useState(true);
 
-  //const [data, setData] = useState([]);
+  const [showLogo, setShowLogo] = useState(true);
   const [players, setPlayers] = useState([]);
   const [houseSort, setHouseSort] = useState({});
 
@@ -54,7 +54,7 @@ function App() {
     });
     setPlayers(playersSelected);
   };
-  const [showLogo, setShowLogo] = useState(true);
+
   return (
     <div className="App">
       {showHomePage && (
