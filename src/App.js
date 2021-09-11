@@ -70,13 +70,13 @@ function App() {
           {showLogo && <SortScreen chanps={players} showLogo={showLogo} />}
           {!showLogo && <SortScreen chanps={players} showLogo={showLogo} />}
           <button
-            className="bnt-sortScreen"
+            className="btn-grad bnt-sortScreen "
             onClick={() => {
               setShowLogo(!showLogo);
               drawPlayer(houseSort, drawHouse);
             }}
           >
-            Clicando
+            Sortear
           </button>
         </>
       )}
