@@ -9,12 +9,10 @@ export function CardCharacter({
 }) {
   const [logoVisible, setlogoVisible] = useState(true);
 
-  /* useEffect(() => {
-    console.Console(showLogo);
+  useEffect(() => {
     setlogoVisible(true);
   }, [showLogo]);
- */
-  console.log(alive);
+
   const firstLetter = house[0];
 
   return (

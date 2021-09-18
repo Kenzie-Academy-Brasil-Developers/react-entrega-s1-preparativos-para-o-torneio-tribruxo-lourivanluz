@@ -17,6 +17,9 @@ image {
 a {
   text-decoration: none;
 }
+.app {
+  position: relative;
+}
 .bnt-sortScreen {
   display: block;
   position: absolute;

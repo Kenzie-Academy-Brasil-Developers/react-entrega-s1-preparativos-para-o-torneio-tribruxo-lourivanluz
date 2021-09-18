@@ -1,11 +1,6 @@
 import "./style.css";
 
-export function HomeScreen({
-  setShowHomePage,
-  drawPlayer,
-  houseSort,
-  drawHouse,
-}) {
+export function HomeScreen({ setShowHomePage, sortStudents, allStudents }) {
   return (
     <div className="homeScreen">
       <h1> O torneio Tribruxo vai começar!!</h1>
@@ -13,7 +8,7 @@ export function HomeScreen({
       <button
         className="btn-grad"
         onClick={() => {
-          drawPlayer(houseSort, drawHouse);
+          sortStudents(allStudents);
           setShowHomePage(false);
         }}
       >
