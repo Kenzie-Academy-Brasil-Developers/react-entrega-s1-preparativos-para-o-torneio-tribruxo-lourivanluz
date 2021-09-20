@@ -3,15 +3,13 @@ import { useEffect } from "react/cjs/react.development";
 import { imagens } from "../../img/Img";
 import "./style.css";
 
-export function CardCharacter({
-  person: { name, house, image, alive },
-  showLogo,
-}) {
+export function CardCharacter({ person: { name, house, image, alive } }) {
   const [logoVisible, setlogoVisible] = useState(true);
 
-  useEffect(() => {
+  /* useEffect(() => {
+    console.log(showLogo);
     setlogoVisible(true);
-  }, [showLogo]);
+  }, [showLogo]); */
 
   const firstLetter = house[0];
 

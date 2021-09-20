@@ -5,7 +5,6 @@ import { SortScreen } from "./components/SortScreen";
 
 function App() {
   const [showHomePage, setShowHomePage] = useState(true);
-
   const [showLogo, setShowLogo] = useState(true);
   const [players, setPlayers] = useState([]);
   const [allStudents, setAllStudents] = useState([]);
@@ -43,7 +42,9 @@ function App() {
       )}
       {!showHomePage && (
         <>
-          <SortScreen chanps={players} showLogo={showLogo} />
+          {showLogo && <SortScreen chanps={players} showLogo={showLogo} />}
+          {!showLogo && <SortScreen chanps={players} showLogo={showLogo} />}
+
           <button
             className="btn-grad bnt-sortScreen"
             onClick={() => {
